@@ -34,7 +34,7 @@ namespace Replace_a_Face
             //checks that some favorites exist
             if(FavoriteListBox.Items.Count < 1)
             {
-                MessageBox.Show("Nothing to delete.");
+                MessageBox.Show("没有可删除的项目。");
                 return;
             }
             //get index of listbox item to be deleted
@@ -59,7 +59,7 @@ namespace Replace_a_Face
         {
             if (FavoriteListBox.Items.Count < 1)
             {
-                MessageBox.Show("Nothing to modify.");
+                MessageBox.Show("没有可修改的项目。");
                 return;
             }
             int toChange = FavoriteListBox.SelectedIndex;

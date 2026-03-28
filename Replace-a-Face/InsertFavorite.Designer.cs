@@ -48,7 +48,7 @@
             this.InsertButton.Name = "InsertButton";
             this.InsertButton.Size = new System.Drawing.Size(602, 33);
             this.InsertButton.TabIndex = 1;
-            this.InsertButton.Text = "Insert";
+            this.InsertButton.Text = "插入";
             this.InsertButton.UseVisualStyleBackColor = true;
             this.InsertButton.Click += new System.EventHandler(this.InsertButton_Click);
             // 
@@ -61,7 +61,7 @@
             this.Controls.Add(this.FavoriteListBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InsertFavorite";
-            this.Text = "Insert Favorite";
+            this.Text = "插入收藏";
             this.ResumeLayout(false);
 
         }

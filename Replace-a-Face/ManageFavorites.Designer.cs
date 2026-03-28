@@ -49,7 +49,7 @@
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(300, 33);
             this.DeleteButton.TabIndex = 1;
-            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.Text = "删除";
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
@@ -59,7 +59,7 @@
             this.ModifyButton.Name = "ModifyButton";
             this.ModifyButton.Size = new System.Drawing.Size(300, 33);
             this.ModifyButton.TabIndex = 2;
-            this.ModifyButton.Text = "Modify";
+            this.ModifyButton.Text = "修改";
             this.ModifyButton.UseVisualStyleBackColor = true;
             this.ModifyButton.Click += new System.EventHandler(this.ModifyButton_Click);
             // 
@@ -76,7 +76,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ManageFavorites";
-            this.Text = "Manage Favorites";
+            this.Text = "管理收藏夹";
             this.ResumeLayout(false);
 
         }

@@ -34,7 +34,7 @@ namespace Replace_a_Face
             //validate face key, input santization
             if (!PublicMethods.faceValid(FaceKeyTextBox.Text.Substring(2)))
             {
-                MessageBox.Show("Error: Invalid Face Key", "Error");
+                MessageBox.Show("错误：无效的面部代码", "错误");
                 return;
             }
             //create new tuple for changed favorite and insert it into List to be written

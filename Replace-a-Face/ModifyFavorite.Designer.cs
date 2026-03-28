@@ -43,7 +43,7 @@
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(35, 13);
             this.NameLabel.TabIndex = 0;
-            this.NameLabel.Text = "Name";
+            this.NameLabel.Text = "名称";
             // 
             // FaceKeyLabel
             // 
@@ -52,7 +52,7 @@
             this.FaceKeyLabel.Name = "FaceKeyLabel";
             this.FaceKeyLabel.Size = new System.Drawing.Size(52, 13);
             this.FaceKeyLabel.TabIndex = 1;
-            this.FaceKeyLabel.Text = "Face Key";
+            this.FaceKeyLabel.Text = "面部代码";
             // 
             // NameTextBox
             // 
@@ -74,7 +74,7 @@
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 4;
-            this.SaveButton.Text = "Save";
+            this.SaveButton.Text = "保存";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
@@ -93,7 +93,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ModifyFavorite";
-            this.Text = "Modify";
+            this.Text = "修改收藏";
             this.ResumeLayout(false);
             this.PerformLayout();
 

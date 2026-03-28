@@ -29,7 +29,7 @@ namespace Replace_a_Face
             //validate that the key provided is valid, input sanitization
             if (!PublicMethods.faceValid(FaceKeyTextBox.Text.Substring(2)))
             {
-                MessageBox.Show("Error: Invalid Face Key", "Error");
+                MessageBox.Show("错误：无效的面部代码", "错误");
                 return;
             }
             //write the key to file
@@ -37,7 +37,7 @@ namespace Replace_a_Face
             writer.WriteLine(NameTextBox.Text + "\t" + FaceKeyTextBox.Text, "a");
             writer.Close();
             //inform user
-            MessageBox.Show(NameTextBox.Text + " added to favorites.");
+            MessageBox.Show(NameTextBox.Text + " 已添加到收藏夹。");
             Close();
         }
 

@@ -84,7 +84,7 @@ namespace Replace_a_Face
             if (!File.Exists(profileFile))
             {
                 // inform user that profiles.dat is missing and return
-                MessageBox.Show("File profiles.dat not found in default location. Open warband, close it, and try again.");
+                MessageBox.Show("在默认位置未找到 profiles.dat 文件。请打开战团，关闭它后再试一次。");
                 return;
             }
 
@@ -96,7 +96,7 @@ namespace Replace_a_Face
                 int version = reader.ReadInt32();
                 if (version != 10)
                 {
-                    MessageBox.Show("This version of Warband is not supported. Update to a newer versiona and try again.");
+                    MessageBox.Show("不支持此版本的战团。请更新到较新版本，然后再试一次。");
                     return;
                 }
 
@@ -139,7 +139,7 @@ namespace Replace_a_Face
                     string face = "0x" + face1 + face2 + face3 + face4 + face5 + face6 + face7 + face8;
 
                     //add the name, facekey, and buttons to the datagrid
-                    NameFaceDataGrid.Rows.Add(charName, face, "Save", "Favorite", "Insert Fav");
+                    NameFaceDataGrid.Rows.Add(charName, face, "保存", "收藏", "插入收藏");
 
                     //the number of favorite servers a character has
                     int numFavoriteServers = reader.ReadInt32();
@@ -188,7 +188,7 @@ namespace Replace_a_Face
 
                 if (!File.Exists(profileFile))
                 {
-                    MessageBox.Show("Profiles.dat has been removed. Reopen warband and try again.");
+                    MessageBox.Show("Profiles.dat 已被移除。请重新打开战团，然后再试一次。");
                     return;
                 }
                 using (BinaryWriter writer = new BinaryWriter(File.Open(profileFile, FileMode.Open)))
@@ -226,13 +226,13 @@ namespace Replace_a_Face
                     writer.Write(face7Val);
 
                     //inform user of completion
-                    MessageBox.Show("Done!");
+                    MessageBox.Show("完成！");
                 }
 
             }
             else
             {
-                MessageBox.Show("Error: Invalid Face Code", "Eror");
+                MessageBox.Show("错误：无效的面部代码", "错误");
             }
         }
 
@@ -248,7 +248,7 @@ namespace Replace_a_Face
             //favorites.txt is created when a favorite is added. No text file, no favorites
             if (!File.Exists("favorites.txt"))
             {
-                MessageBox.Show("No favorites found.");
+                MessageBox.Show("未找到收藏夹。");
                 return new List<Tuple<string, string>>();
             }
 
@@ -276,7 +276,7 @@ namespace Replace_a_Face
         private void SaveProfile_Click(object sender, EventArgs e)
         {
             File.Copy(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Mount&Blade Warband\\profiles.dat", ".\\profiles.dat", true);
-            MessageBox.Show("Saved");
+            MessageBox.Show("已保存");
 
         }
 
@@ -285,12 +285,12 @@ namespace Replace_a_Face
         {
             if (!File.Exists(".\\profiles.dat"))
             {
-                MessageBox.Show("No backup found.");
+                MessageBox.Show("未找到备份。");
                 return;
             }
             File.Copy(".\\profiles.dat", Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Mount&Blade Warband\\profiles.dat", true);
             loadProfiles();
-            MessageBox.Show("Loaded");
+            MessageBox.Show("已加载");
         }
 
         //open addfavorite form, importing the char name and face key to the form
@@ -311,7 +311,7 @@ namespace Replace_a_Face
             }
             else
             {
-                MessageBox.Show("No Favorites found.");
+                MessageBox.Show("未找到收藏夹。");
             }
         }
 
@@ -370,7 +370,7 @@ namespace Replace_a_Face
             }
             else
             {
-                MessageBox.Show("No Favorites found.");
+                MessageBox.Show("未找到收藏夹。");
             }
 
         }

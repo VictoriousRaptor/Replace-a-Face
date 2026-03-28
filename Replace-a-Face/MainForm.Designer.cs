@@ -61,7 +61,7 @@
             // 
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Text = "文件";
             // 
             // contextMenuStrip2
             // 
@@ -77,7 +77,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(818, 24);
             this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "Menu";
+            this.menuStrip1.Text = "菜单";
             // 
             // fileToolStripMenuItem1
             // 
@@ -86,13 +86,13 @@
             this.backupProfilesToolStripMenuItem});
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
             this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem1.Text = "File";
+            this.fileToolStripMenuItem1.Text = "文件";
             // 
             // manageFavoritesToolStripMenuItem
             // 
             this.manageFavoritesToolStripMenuItem.Name = "manageFavoritesToolStripMenuItem";
             this.manageFavoritesToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.manageFavoritesToolStripMenuItem.Text = "Manage Favorites";
+            this.manageFavoritesToolStripMenuItem.Text = "管理收藏夹";
             this.manageFavoritesToolStripMenuItem.Click += new System.EventHandler(this.ManageFavorites_Click);
             // 
             // backupProfilesToolStripMenuItem
@@ -102,20 +102,20 @@
             this.loadToolStripMenuItem});
             this.backupProfilesToolStripMenuItem.Name = "backupProfilesToolStripMenuItem";
             this.backupProfilesToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.backupProfilesToolStripMenuItem.Text = "Backup Profiles";
+            this.backupProfilesToolStripMenuItem.Text = "备份配置文件";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Text = "保存";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveProfile_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
             this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.loadToolStripMenuItem.Text = "Load";
+            this.loadToolStripMenuItem.Text = "加载";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.LoadProfile_Click);
             // 
             // NameFaceDataGrid
@@ -143,7 +143,7 @@
             // 
             this.ProfileName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.ProfileName.FillWeight = 20F;
-            this.ProfileName.HeaderText = "Profile Name";
+            this.ProfileName.HeaderText = "配置文件名";
             this.ProfileName.Name = "ProfileName";
             this.ProfileName.ReadOnly = true;
             this.ProfileName.Width = 85;
@@ -151,7 +151,7 @@
             // FaceKey
             // 
             this.FaceKey.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.FaceKey.HeaderText = "Face Key (Click to Edit)";
+            this.FaceKey.HeaderText = "面部代码（点击编辑）";
             this.FaceKey.Name = "FaceKey";
             // 
             // Save
@@ -189,7 +189,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Replace a Face";
+            this.Text = "替换面部 (Replace a Face)";
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
